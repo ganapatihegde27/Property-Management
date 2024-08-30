@@ -1,6 +1,5 @@
 package com.mycompany.property_management.entity;
 
-
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,15 +10,13 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "PROPERTY_TABLE")
-public class PropertyEntity {
+@Table(name = "USER_TABLE")
+public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    @Column(name = "Property_title")
-    private String title;
-    private String description;
-    private Double price;
-    private String address;
-
+    private Long Id;
+    private String Ownername;
+    private String Owneremail;
+    private String phone;
+    private String password;
 }

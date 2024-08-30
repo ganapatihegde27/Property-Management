@@ -50,13 +50,10 @@ public class PropertyServiceimpl implements PropertyService {
        if(optEn.isPresent()){
            PropertyEntity pe = optEn.get();
            pe.setTitle(propertyDTO.getTitle());
-           pe.setOwnerEmail(propertyDTO.getOwnerEmail());
            pe.setAddress(propertyDTO.getAddress());
            pe.setDescription(propertyDTO.getDescription());
            pe.setPrice(propertyDTO.getPrice());
-           pe.setOwnerName(propertyDTO.getOwnerName());
            dto = propertyConverter.convertEntitytoDTO(pe);
-
            propertyRepository.save(pe);
        }
 
