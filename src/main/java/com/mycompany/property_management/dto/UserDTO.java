@@ -11,9 +11,9 @@ import lombok.Setter;
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 public class UserDTO {
-    private Long Id;
-    private String Ownername;
-    private String Owneremail;
+    private Long id;
+    private String ownername;
+    private String owneremail;
     private String phone;
     private String password;
 }
