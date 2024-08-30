@@ -1,0 +1,19 @@
+First time commit
+===============================
+
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin https://github.com/ganapatihegde27/Property-Management.git
+git remote set-url origin https://ganapatihegde27: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@github.com/ganapatihegde27/Property-Management.git
+git push
+git push --set-upstream origin master
+
+
+Next time commit
+======================================
+
+git pull
+git add .
+git commit -m "some message"
+git push
