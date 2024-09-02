@@ -14,9 +14,9 @@ import lombok.Setter;
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long Id;
-    private String Ownername;
-    private String Owneremail;
+    private Long id;
+    private String ownername;
+    private String owneremail;
     private String phone;
     private String password;
 }
